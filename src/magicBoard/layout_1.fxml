@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Pane id="TeacherScreen" layoutX="1440.0" layoutY="745.0" prefHeight="335.0" prefWidth="480.0" />
+    <Pane id="StudentScreen" layoutX="0.0" layoutY="0.0" prefHeight="1080.0" prefWidth="1440.0">
+      <children>
+        <Separator layoutX="1437.0" layoutY="0.0" orientation="VERTICAL" prefHeight="1080.0" />
+      </children>
+    </Pane>
+    <Pane id="OldScreen1" layoutX="1437.0" layoutY="360.0" prefHeight="360.0" prefWidth="480.0" />
+    <Pane id="OldScreen2" layoutX="1440.0" layoutY="0.0" prefHeight="360.0" prefWidth="480.0" />
+    <MenuBar id="Menu" layoutX="1440.0" layoutY="720.0" minHeight="22.0" prefHeight="25.0" prefWidth="480.0" scaleX="1.0" scaleY="1.0" scaleZ="1.0">
+      <menus>
+        <Menu id="File" mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu id="Edit" mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu id="Help" mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <ColorPicker id="Color" layoutX="1657.0" layoutY="720.0" />
+    <ToggleButton contentDisplay="TOP" layoutX="1783.0" layoutY="720.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="53.0" text="Erase" textOverrun="CLIP">
+      <font>
+        <Font size="14.0" />
+      </font>
+      <toggleGroup>
+        <ToggleGroup fx:id="Erase" />
+      </toggleGroup>
+    </ToggleButton>
+  </children>
+</AnchorPane>

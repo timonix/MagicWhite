@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="magicBoard.PaintController">
+  <left>
+    <Canvas fx:id="canvas_2" height="600.0" width="600.0" />
+  </left>
+  <right>
+    <Canvas fx:id="canvas_1" height="600.0" width="600.0" />
+  </right>
+  <top>
+    <VBox>
+      <MenuBar>
+        <Menu text="File">
+          <MenuItem onAction="#onSave" text="Save" />
+          <MenuItem onAction="#onExit" text="Exit" />
+        </Menu>
+      </MenuBar>
+      <ToolBar>
+        <HBox alignment="CENTER" spacing="5.0">
+          <TextField fx:id="brushSize" text="18" />
+          <ColorPicker fx:id="colorPicker" />
+          <CheckBox fx:id="eraser" text="Eraser" />
+        </HBox>
+      </ToolBar>
+    </VBox>
+  </top>
+</BorderPane>
